@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --color-primary: #3d3d3d;
+  --color-secondary: #2645ac;
+}
+
+.header {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.sub-header {
+  font-weight: 300;
+  font-size: 2rem;
+}
