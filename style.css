@@ -7,16 +7,52 @@
 
 :root {
   --color-primary: #3d3d3d;
-  --color-secondary: #2645ac;
+  --color-secondary: #3b529c;
 }
 
-.header {
+body {
+  background-color: #fcfcfc;
+}
+
+.container {
+  padding: 0.5rem 4rem;
+  background-color: #242424;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fcfcfc;
+  transition: 0.3s ease-in-out;
+}
+
+nav a.active {
+  color: #fcfcfc;
+}
+
+#name {
   color: var(--color-primary);
-  font-weight: 500;
-  font-size: 4rem;
+  font-weight: 400;
+  font-size: 5rem;
 }
 
-.sub-header {
+#sub-header {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
