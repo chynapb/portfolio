@@ -21,7 +21,7 @@ body {
 
 /* Navbar */
 #navbar-container {
-  background-color: #f7f7f7;
+  background: #f7f7f7;
   padding: 15px 50px;
 }
 
@@ -99,7 +99,7 @@ a:hover::after {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 100vh;
+  padding: 100px 0px 50px 0px;
 }
 
 #about-img {
@@ -120,7 +120,7 @@ a:hover::after {
 
 #about-info {
   padding: 15px 0;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   line-height: 2.25rem;
 }
 
@@ -129,15 +129,39 @@ a:hover::after {
 }
 
 /* Skills */
+#skills {
+  padding: 25px 50px 50px 50px;
+  background: #f7f7f7;
+}
 
-#skills h1 {
+#skills h2 {
   text-align: center;
-  font-size: 2.25rem;
+  font-size: 2rem;
+}
+
+#skills-container {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin: 20px 40px 20px 40px;
 }
 
 /* Projects */
-#projects h1 {
+#projects {
+  padding: 15px 50px 50px 50px;
+  background: #f7f7f7;
+}
+
+#projects h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 /* Contact */
