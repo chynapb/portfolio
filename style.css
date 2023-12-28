@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #e9e9e9;
+  background: #e9e9e9;
   color: var(--color-primary);
 }
 
@@ -43,7 +43,7 @@ nav,
   display: flex;
 }
 
-a {
+.nav-links a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.05rem;
@@ -51,7 +51,7 @@ a {
   color: var(--color-primary);
 }
 
-a::after {
+.nav-links a::after {
   content: '';
   width: 0;
   height: 3px;
@@ -62,7 +62,7 @@ a::after {
   transition: 0.4s;
 }
 
-a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
 
@@ -124,13 +124,17 @@ a:hover::after {
   line-height: 2.25rem;
 }
 
+#about-info p {
+  margin-bottom: 30px;
+}
+
 #about-text span {
   color: var(--color-secondary);
 }
 
 /* Skills */
 #skills {
-  padding: 25px 50px 50px 50px;
+  padding: 30px 50px 50px 50px;
   background: #f7f7f7;
 }
 
@@ -155,13 +159,46 @@ a:hover::after {
 
 /* Projects */
 #projects {
-  padding: 15px 50px 50px 50px;
+  padding: 40px 50px 50px 50px;
   background: #f7f7f7;
 }
 
 #projects h2 {
   text-align: center;
   font-size: 2rem;
+}
+
+.project-container {
+  margin: 25px 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  margin: 15px 30px;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-info a {
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
 }
 
 /* Contact */
@@ -184,7 +221,8 @@ a:hover::after {
   border-radius: 2rem;
   border: var(--color-primary) 1px solid;
   background: #fcfcfc;
-  margin-top: 40px;
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 .btn-light:hover {
