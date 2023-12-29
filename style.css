@@ -219,6 +219,15 @@ nav,
   width: 5rem;
 }
 
+.icon-sm {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-sm:hover {
+  cursor: pointer;
+}
+
 /* Buttons */
 .btn-light {
   font-family: 'Montserrat', sans-serif;
