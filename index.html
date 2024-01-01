@@ -14,20 +14,40 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar-container">
+    <!-- <nav id="navbar-container">
+      <div class="logo">CB</div>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav> -->
+    <header>
       <div id="logo">CB</div>
-      <div>
+      <nav>
         <ul class="nav-links">
           <li><a href="#">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
-    </nav>
+    </header>
 
     <!-- Header -->
-    <div id="header">
+    <div id="heading">
       <h1 id="name">Chyna Blair</h1>
       <h3 id="sub-header">Fullstack Developer</h3>
     </div>
@@ -167,7 +187,12 @@
       <div id="contact-container">
         <div id="contact-info">
           <a href="mailto:chynapblair@gmail.com">
-            <img src="./assets/icons/email.svg" class="icon-sm" alt="Email" />
+            <img
+              src="./assets/icons/email.svg"
+              class="icon-sm"
+              alt="Email"
+              id="email-icon"
+            />
           </a>
           <a href="https://www.linkedin.com/in/chynablair">
             <img
@@ -175,6 +200,9 @@
               alt="LinkedIn"
               class="icon-sm"
             />
+          </a>
+          <a href="https://www.github.com/chynapb">
+            <img src="./assets/icons/github.svg" alt="Github" class="icon-sm" />
           </a>
         </div>
       </div>
