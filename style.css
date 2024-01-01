@@ -43,7 +43,7 @@ header {
 .nav-links a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: 1rem;
   position: relative;
   color: var(--color-primary);
   padding: 5px;
@@ -125,7 +125,7 @@ header {
 .mobile-menu a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: 1rem;
   position: relative;
   color: var(--color-primary);
   padding: 5px;
@@ -251,10 +251,6 @@ header {
   justify-content: center;
 }
 
-.project {
-  margin: 25px 30px;
-}
-
 .project-info {
   text-align: center;
   padding: 25px;
@@ -271,8 +267,8 @@ header {
 }
 
 .img {
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   border-radius: 10px;
   display: block;
   margin-left: auto;
@@ -358,11 +354,26 @@ header {
 }
 
 /* Media queries */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header nav {
     display: none;
   }
   #hamburger-icon {
     display: block;
+  }
+  #skills,
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #heading {
+    height: 85vh;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  #about {
+    flex-wrap: wrap;
   }
 }
