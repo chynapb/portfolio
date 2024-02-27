@@ -152,6 +152,7 @@ header {
 
 /* Header */
 #heading {
+  height: 100vh;
   text-align: center;
   margin: 15% 0 20% 0;
 }
