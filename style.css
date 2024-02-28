@@ -154,7 +154,7 @@ header {
 #heading {
   height: 100vh;
   text-align: center;
-  margin: 15% 0 20% 0;
+  margin-top: 15%;
 }
 
 #name {
@@ -369,17 +369,31 @@ header {
 }
 
 /* Media queries */
-@media screen and (max-width: 700px) {
-  header nav {
-    display: none;
+@media screen and (max-width: 350px) {
+  #name {
+    font-size: 3rem;
   }
 
+  #heading {
+    margin-top: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
   #hamburger-icon {
     display: block;
   }
 
+  header nav {
+    display: none;
+  }
+
+  #heading {
+    margin-top: 45%;
+  }
+
   #name {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   #sub-header {
@@ -418,6 +432,10 @@ header {
 }
 
 @media screen and (max-width: 950px) {
+  #heading {
+    margin-top: 40%;
+  }
+
   #about {
     text-align: center;
     margin: 20px;
